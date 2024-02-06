@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+	"name": "Eyelax", 
+	"version": "1.0",
+	"description":"난독증, 노인분들의 인터넷 사용을 위한 크롬 확장",
+	"permissions": [ 
+		"identity",
+		"tabs", 
+		"storage", 
+		"activeTab",
+		"<all_urls>"
+		], 
+	"icons": {
+		"16": "img/icon.png",
+		"32": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+	"browser_action": {
+		"default_icon": "img/icon.png",
+		"default_title": "Eyelax",      
+		"default_popup": "popup.html"
+		
+		},
+	"content_scripts": [
+    {
+		"matches": ["<all_urls>"], 
+		"js": ["js/fontsize.js"], 
+		"css": [],
+		"all_frames": true, 
+		"run_at": "document_start" 
+	} ]
+
+}

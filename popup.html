@@ -1,0 +1,126 @@
+<!doctype html> 
+  <head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>test</title> 
+    <style> 
+		*{
+			font-size: 20px;
+			padding: 3px;
+		}
+		.s1{
+			padding:0px;
+			padding-right:0.7px;
+			font-size:35px;
+		}
+		.s2{
+			padding:0px;
+			padding-right:0.7px;
+			font-size:35px;
+		}
+		.s3{
+			padding:0px;
+			padding-right:0.7px;
+			font-size:35px;
+		}
+		.s4{
+			padding:0px;
+			padding-right:0.7px;
+			font-size:35px;
+			color:#2a3369;
+		}
+		.s5{
+			padding:0px;
+			padding-right:0.7px;
+			font-size:35px;
+			color:#30396d;
+		}
+		.s6{
+			padding:0px;
+			padding-right:0.7px;
+			font-size:35px;
+			color:#52619b;
+		}
+		h1 {
+			font-family:Impact, Charcoal, sans-serif;
+			margin: 0px 0px 14px;
+		}
+		p {
+			margin:0px;
+			font-style:bold;
+		}
+		body {
+			font-family:'Noto Sans KR';
+			width: 300px; 
+			height: 500px;
+			background:url("img/icon_down.png");
+		} 
+    	.button { 
+			border-radius: 3px; 
+			background-color: rgb(239, 240, 248);
+			cursor: pointer; 
+			user-select: none; 
+			padding: 3px; 
+			margin-right:3px;
+			border-style:none;
+    	} 
+		.list {
+			background-color: rgb(239, 240, 248);
+			border-style:none;
+			border-radius: 3px; 
+			margin: 0px 0px 7px; 
+			padding: 2px; 
+		}
+		.button_group{
+			margin: 0px 0px 10px; 
+		}
+		.img{
+			opacity:0.5;
+			background-color: rgba(255,255,255,0);
+		}
+    </style> 
+  </head> 
+  <body> 
+	<h1><span class="s1">E</span><span class="s2">y</span><span class="s3">e</span><span class="s4">l</span><span class="s5">a</span><span class="s5">x</span> </h1>
+
+	<p>글씨크기 조절</p>
+	<div class="button_group">
+		<img src="img/plus.png" width="30px" height="30px" class="button" id="sizeup"></img>
+		<img src="img/minus.png" width="30px" height="30px" class="button" id="sizedown"></img>
+		<img src="img/return.png" width="30px" height="30px" class="button" id="default_size"></img>
+	</div>
+
+	<p>글자간격 조절</p>
+	<div class="button_group">
+		<img src="img/plus.png" width="30px" height="30px" class="button" id="lspaceup"></img>
+		<img src="img/minus.png" width="30px" height="30px" class="button" id="lspacedown"></img>
+		<img src="img/return.png" width="30px" height="30px" class="button" id="default_letterspace"></img>
+	</div>
+
+	<p id="font_type">글씨체</p>
+	<div class="button_group">
+		<select class="list" name='fontlist' id='fontlist'></select>
+		<br/>
+	</div>
+	
+	<p>읽어주기</p>
+	<div class="button_group">
+		<img src="img/play.png" width="30px" height="30px" class="button" id="say"></img>
+		<img src="img/stop.png" width="30px" height="30px" class="button" id="stop"></img>
+		<img src="img/pause.png" width="30px" height="30px" class="button" id="pause"></img>
+		<img src="img/resume.png" width="30px" height="30px" class="button" id="resume"></img>
+	</div>
+
+	<p>사전</p>
+	<div class="button_group">
+		<button class="button" id="korea_dict">국어사전</button>
+		<button class="button" id="english_dict">영어사전</button>
+	</div>
+
+	<script src="js/popup.js"></script>
+	<script src="js/tts.js"></script>
+	<script src="js/dictionary.js"></script>
+	<script src="js/fontsize.js"></script>
+  </body>
+</html>
+
